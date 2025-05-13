@@ -1,0 +1,35 @@
+Verifique o parâmetro TTL 
+Há o decréscimo de uma unidade por termos um roteador: TTL = 128
+a) Qual a função do roteador?
+	O roteador tem a função de encaminhar pacotes de uma rede para outra, permitindo a comunicação entre redes diferentes. Ele toma decisões baseadas no endereço IP de destino e nas rotas configuradas.
+
+b) O que é um default gateway?
+	O default gateway é o dispositivo de saída da rede local, que permite que os pacotes sejam enviados para outras redes.
+
+c) O que acontece se não declararmos o default gateway em um PC?
+	O PC só conseguirá se comunicar com dispositivos da mesma rede local. Não conseguirá acessar dispositivos em outras redes, pois não saberá para onde enviar os pacotes externos.
+
+d) Qual a principal desvantagem no uso do roteamento estático?
+	A principal desvantagem é que ele não se ajusta automaticamente a mudanças na rede. Se houver falhas ou alterações de caminhos, o administrador deve atualizar manualmente as rotas.
+
+e) O que é domínio de difusão de uma rede?
+	Um domínio de difusão é um grupo de dispositivos que recebem os mesmos pacotes de broadcast (ex: ping 255.255.255.255).
+Roteadores isolam domínios de broadcast, ou seja, cada rede conectada a um roteador é um domínio de broadcast separado.
+
+f) Por que todas as máquinas das duas redes não respondem simultaneamente aos “broadcasts”?
+	Porque roteadores não encaminham pacotes de broadcast entre redes diferentes. Logo, um ping de broadcast atinge apenas os dispositivos na mesma rede/sub-rede do emissor.
+
+g) O que representa o TTL apresentado na resposta do comando “ping”?
+	 TTL (Time To Live) indica o número máximo de roteadores que um pacote pode atravessar. Cada roteador diminui o TTL em 1.
+
+h) O que faz o comando “tracert”?
+	O tracert mostra o caminho percorrido pelo pacote até o destino, exibindo os roteadores intermediários. É útil para diagnosticar problemas de rota ou lentidão na rede.
+
+i) Neste exercício, quantas redes estão configuradas?
+	Três redes: 200.1.0.0/24 – Rede do Switch0 (Server0 e PCs PC0-PC4), 200.1.1.0/24 – Rede do Switch1 (Server1 e PCs PC5-PC9) e 1.0.0.0/8 – Rede de interligação entre os dois roteadores (Fa0/1)
+
+j) Quais os endereços de cada rede?
+	Rede	Descrição			Faixa de IPs válidos
+200.1.0.0/24	LAN do Switch0 (Server0)	200.1.0.1 – 200.1.0.254
+200.1.1.0/24	LAN do Switch1 (Server1)	200.1.1.1 – 200.1.1.254
+1.0.0.0/8	Link entre Router0 e Router1	1.0.0.1 (Router0) e 1.0.0.2 (Router1)

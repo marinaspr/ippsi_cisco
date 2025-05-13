@@ -1,0 +1,22 @@
+1. Qual a classe destas redes?
+Os IPs 200.1.x.x pertencem à classe C
+
+2. Quantas redes temos configuradas?
+Duas: 200.1.2.0/24 e 200.1.3.0/24
+
+3. Qual o endereço de cada rede?
+Rede 1: 200.1.2.0 e Rede 2: 200.1.3.0
+
+4. Qual o endereço de broadcast de cada rede?
+Broadcast da 200.1.2.0/24: 200.1.2.255
+
+Broadcast da 200.1.3.0/24: 200.1.3.255
+
+a) Quantas redes temos configuradas?
+duas redes com máscara /26: 200.1.2.0/26 e 200.1.2.64/26
+
+b) Qual o endereço de cada rede?
+Rede 1: 200.1.2.0/26 e Rede 2: 200.1.2.64/26
+
+c) Qual o endereço de broadcast de cada rede?
+Rede 1 (200.1.2.0/26): 200.1.2.63 e Rede 2 (200.1.2.64/26): 200.1.2.127

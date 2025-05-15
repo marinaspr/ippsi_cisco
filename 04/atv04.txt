@@ -1,22 +1,29 @@
-a) Houve troca em algum endereço IP? Por quê? 
+8. a) Houve troca em algum endereço IP? Por quê? 
 	Houve a troca ao usar o release e renew, porque um libera o IP que está sendo utilizado ao servidor DHCPP e o outro solicita um novo IP
+
 b) O que faz o comando ipconfig com o parâmetro /release? 
 	Libera o enedereço IP que está sendo utilizado pela via DHCP
+
 c) O que faz o comando ipconfig com o parâmetro /renew? 
 	Solicita um novo IP ao servidor DHCP
+
 d) Insira mais quatro PCs e conecte ao switch e os configure para DHCP. 
 e) Os novos hosts da rede obtêm IP? 
 	3 ficaram sem, por conta que colocamos como maximo de usuários 11.
+
  13. Explique o ocorrido e a causa
 	O servidor DHCP tinha um pool de 11 IPs disponíveis (200.1.2.100 a 200.1.2.110) que estavam todos ocupados pelos PCs de 0 a 9. O PC1 a PC4 liberaram os IPs, retornando-os ao pool do servidor. Os PCs PC10 a PC13 solicitaram IPs e receberam os que estavam livres. Quando PC1 a PC4 tentaram renovar, os IPs anteriores já estavam usados por outros hosts. Se não há mais IPs no pool, eles não conseguem um novo IP e assumem o endereço APIPA (169.254.x.x), que indica falha no DHCP.
+
 14. Para que serve o DHCP?
 	é um protocolo de rede que atribui automaticamente endereços IP e outras configurações de rede aos dispositivos (hosts) de uma rede.
 
 21. Encerre o Cisco Packet Tracer e responda:  
 f) Dois DHCP-Servers podem atuar numa mesma rede?  
 	Sim, eles podem
+
 g) Se sim, qual a vantagem de se fazer isso?  
 	Distribuição de carga, e caso aconteça a perda de um dos dois
+
 h) Ainda em caso positivo, que cuidados devem ser tomados?
 	Evitar sobreposição de IPs, configuração correta
 

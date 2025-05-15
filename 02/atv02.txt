@@ -1,4 +1,4 @@
-a) A solicitação de eco (ping), enviada pela máquina de origem, é replicada para
+16.a) A solicitação de eco (ping), enviada pela máquina de origem, é replicada para
 quantos hosts? 1
 b) Todos a recebem? sim
 c) Algum host descarta a mensagem de solicitação de eco (ping)? não

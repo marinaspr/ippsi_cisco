@@ -1,9 +1,23 @@
-14. Configure as interfaces de rede do Router0: 
-	Responda: Qual a classe desta rede? Classe C
-Clique sobre Serial2/0 e configure: 
-	Responda: Qual a classe desta rede? Classe A
-Clique sobre Serial3/0 e configure: 
-	Responda: Qual a classe desta rede? Classe A
+13. Teste as conexões de rede: 
+• Abra o prompt de comandos no PC0 e verifique o IP (ipconfig) • Anote o IP de PC0: PC0 = 200.1.0.100
+• Teste a conectividade com o restante da rede com o ping (em broadcast): ping 200.1.0.255 • Verifique se todas as máquinas de sua rede respondem. Verifique também o TTL indicado.
+• Abra o prompt de comandos no PC3 e verifique o IP (ipconfig) 
+• Anote o IP de PC3: PC3 = 200.1.1.100
+• Teste a conectividade com o restante da rede com o ping (em broadcast): ping 200.1.1.255 
+• Verifique se todas as máquinas de sua rede respondem. Verifique também o TTL indicado: TTL = 128
+
+• Abra o prompt de comandos no PC6 e verifique o IP (ipconfig)
+• Anote o IP de PC6: PC6 = 200.1.2.100
+• Teste a conectividade com o restante da rede com o ping (em broadcast): ping 200.1.2.255 
+• Verifique se todas as máquinas de sua rede respondem. Verifique também o TTL indicado: TTL = 128. 
+
+14. Configure as interfaces de rede do Router0:  
+• Clique sobre FastEthernet0/0 e configure: IP Address 200.1.0.1 Subnet Mask 255.255.255.0 Port Status on 
+Responda: Qual a classe desta rede? Classe C
+• Clique sobre Serial2/0 e configure: IP Address 1.0.0.1 Subnet Mask 255.0.0.0 Port Status on Clock Rate escolha 1200 
+Responda: Qual a classe desta rede? Classe A 
+• Clique sobre Serial3/0 e configure: IP Address 3.0.0.1 Subnet Mask 255.0.0.0 Port Status on Clock Rate escolha 9600 
+Responda: Qual a classe desta rede? Classe A
 
 15. Configure as interfaces de rede do Router1:
 	Responda: Qual a classe desta rede? Classe C
@@ -44,6 +58,8 @@ Verifique se todas as máquinas das duas redes respondem.
 
 20. Quais redes foram afetadas? 
 	200.1.0.100(pc0) no pc6 e 200.1.2.100(pc6) no pc0
+b) Detalhe sua resposta, indicando qual rede deixou de conectar-se com qual outra rede. 
+	A rede e os computadores do switch 0 não conseguem achar um caminho para a rede do switch 2, e o mesmo ocorre para o switch 2, fazendo os dois pcs não se conectarem um com o outro.
 
 23. Configure o roteamento estático no Router1 usando o RIP 
 A caixa Network Address deverá apresentá-las: 

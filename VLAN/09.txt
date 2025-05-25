@@ -1,4 +1,4 @@
- 11. a) O que faz o comando “show vlan brief”?
+11. a) O que faz o comando “show vlan brief”?
 	O comando show vlan brief mostra um resumo das VLANs configuradas no switch. Ele lista o número e nome de cada VLAN, o tipo, e as portas que estão atribuídas a cada uma delas.
 
 b) As portas fa0/9, fa0/10, fa0/11 e fa0/12 não foram alteradas. A qual VLAN elas ficaram associadas?

@@ -1,0 +1,23 @@
+SWITCH
+
+11.a) A solicitação de eco (ping), enviada pela máquina de origem, é replicada para
+quantos hosts? 5
+
+b) Todos a recebem? sim
+
+c) Algum host descarta a mensagem de solicitação de eco (ping)? Todos, exceto o pc que foi endereçado o ping.
+
+d) Quantas máquinas respondem à solicitação de eco (ping)?1
+
+e) A resposta à solicitação de eco é enviada para quantos hosts? 1, o destinatario apenas.
+
+f) Todos a recebem? Não, apenas o pc destintrio.
+
+g) Algum host descarta a mensagem de resposta da solicitação de eco (ping)? não
+
+h) Qual a diferença na atuação do hub e do switch?
+O HUB replicou os dados sem observar o destino, logo todas as maquinas recebiam a mensagem, sendo assim menos eficiente.
+O switch, mesmo enviando o pacote para todas,depois reconheceu os pcs que se comunicavam e enviou a mensagem apenas para a maquina necessária, parecendo então ser mais seguro e eficiente.
+
+i) Para que servem as mensagens STP usadas pelo Switch?
+Garantir que não haja loops na rede, evitando congestionamento ou perda de pacotes.

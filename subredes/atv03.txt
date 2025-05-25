@@ -1,0 +1,30 @@
+6. Teste a conectividade do PC0 com as outras máquinas usando o comando “ping 255.255.255.255 ”. Quais máquinas respondem? Por quê?
+R:Cisco Packet Tracer não efetua esse tipo de ping, então não é possível fazer essa simulação. 
+Pesquisando sobre foi possível observar que nenhuma máquina iria responder, porque, por questões de segurança, ele não permite esse tipo de broadcast.
+Mas, utilizando ping 200.1.2.255, com o endereço do PC0, em broadcast, todos os PCs da mesma sub-rede responderam.
+
+8. Teste a conectividade do PC5 com as outras máquinas usando o comando “ping 255.255.255.255 ”. Quais máquinas respondem? Por quê?
+R: O ping com a estrutura indicada não é possível pelos mesmos motivos do exercício acima. Com a estrutura "ping 200.1.3.255", todos os hosts da mesma sub-rede responderam.
+
+9-a) Qual a classe destas redes?
+Os IPs 200.1.x.x pertencem à classe C
+
+b) Quantas redes temos configuradas?
+Duas: 200.1.2.0/24 e 200.1.3.0/24
+
+c) Qual o endereço de cada rede?
+Rede 1: 200.1.2.0 e Rede 2: 200.1.3.0
+
+d). Qual o endereço de broadcast de cada rede?
+Broadcast da 200.1.2.0/24: 200.1.2.255
+
+Broadcast da 200.1.3.0/24: 200.1.3.255
+
+16-a) Quantas redes temos configuradas?
+duas redes com máscara /26: 200.1.2.0/26 e 200.1.2.64/26
+
+b) Qual o endereço de cada rede?
+Rede 1: 200.1.2.0/26 e Rede 2: 200.1.2.64/26
+
+c) Qual o endereço de broadcast de cada rede?
+Rede 1 (200.1.2.0/26): 200.1.2.63 e Rede 2 (200.1.2.64/26): 200.1.2.127

@@ -107,16 +107,21 @@ e) O que faz o serviço DNS?
 	O serviço DNS traduz nomes de domínio para endereços IP, permitindo que dispositivos acessem serviços na internet usando nomes em vez de números.
 
 f) Neste exercício, quantas redes foram configuradas?
-	9 redes
+	12 redes
 
 g) Quais os endereços de cada rede?
 	200.168.0.0
+	200.168.2.0
+	200.168.3.0
+	200.168.5.0
+
 	1.0.0.0
 	2.0.0.0
 	3.0.0.0
 	4.0.0.0
 	5.0.0.0
 	6.0.0.0
+
 	110.0.0.110
 	140.0.0.140
 
